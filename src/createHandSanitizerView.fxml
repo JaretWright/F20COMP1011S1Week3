@@ -68,7 +68,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" text="See List">
+                  <Button mnemonicParsing="false" onAction="#changeToListView" text="See List">
                      <font>
                         <Font size="18.0" />
                      </font>
