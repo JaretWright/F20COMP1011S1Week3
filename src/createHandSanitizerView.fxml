@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -60,11 +61,20 @@
                   <TextField fx:id="alcoholTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                </children>
             </GridPane>
-            <Button mnemonicParsing="false" onAction="#submitButtonClicked" text="Click me!">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#submitButtonClicked" text="Click me!">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="See List">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
             <Label fx:id="outputLabel" text="Label">
                <font>
                   <Font size="18.0" />
