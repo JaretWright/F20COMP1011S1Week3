@@ -26,6 +26,8 @@ public class HandSanitizerBottle {
      * @param newBrand - a String representing the brand name
      */
     public void setBrand(String newBrand) {
+
+
         if (newBrand.equalsIgnoreCase("Great Value") || newBrand.equalsIgnoreCase("JDub's Elixer"))
             this.brand = newBrand;
         else
@@ -61,7 +63,7 @@ public class HandSanitizerBottle {
     }
 
     public void setAlcoholContent(double alcoholContent) {
-        if (alcoholContent>=0 && alcoholContent<=100)
+        if (alcoholContent>=75 && alcoholContent<=100)
             this.alcoholContent = alcoholContent;
         else
             throw new IllegalArgumentException("alcohol content must be 0-100");
